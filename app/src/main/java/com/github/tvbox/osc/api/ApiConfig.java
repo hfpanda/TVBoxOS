@@ -127,7 +127,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://afecc.asuscomm.com:4433/AICLOUD125585177/dfy.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
